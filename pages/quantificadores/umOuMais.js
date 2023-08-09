@@ -2,7 +2,11 @@ const text = "A palavra é uma palavraa poderosa, pois uma única palavr pode mu
 
 var results = [];
 
-match(/palavra?/gi);
+match(/palavra+/gi);
+
+match(/[...]/gi);
+
+match(/[...]+/gi);
 
 document.addEventListener("DOMContentLoaded", function() {    
     let element = document.getElementById("text");
